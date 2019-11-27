@@ -4,6 +4,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JRadioButton;
 import javax.swing.JTextField;
+import javax.swing.ButtonGroup;
 import javax.swing.JButton;
 import javax.swing.JTextPane;
 import java.awt.event.MouseAdapter;
@@ -67,6 +68,15 @@ public class DeclineCurvesApp {
 		JRadioButton HyperbolicDecline = new JRadioButton("Hyperbolic");
 		HyperbolicDecline.setBounds(10, 104, 111, 23);
 		frmDeclineCurves.getContentPane().add(HyperbolicDecline);
+		
+		//Grouped the buttons in one group
+		
+		ButtonGroup group = new ButtonGroup();
+		
+		group.add(ExponentialDecline);
+		group.add(HarmonicDecline);
+		group.add(HyperbolicDecline);
+		
 
 		JLabel lblDe = new JLabel("Decline Rate");
 		lblDe.setBounds(175, 39, 84, 14);
