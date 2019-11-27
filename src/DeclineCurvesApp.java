@@ -8,6 +8,7 @@ import javax.swing.JButton;
 import javax.swing.JTextPane;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import javax.swing.SwingConstants;
 
 public class DeclineCurvesApp {
 
@@ -72,6 +73,7 @@ public class DeclineCurvesApp {
 		frmDeclineCurves.getContentPane().add(lblDe);
 
 		declineRateValue = new JTextField();
+		declineRateValue.setHorizontalAlignment(SwingConstants.CENTER);
 		declineRateValue.setBounds(277, 36, 96, 20);
 		frmDeclineCurves.getContentPane().add(declineRateValue);
 		declineRateValue.setColumns(10);
@@ -81,6 +83,7 @@ public class DeclineCurvesApp {
 		frmDeclineCurves.getContentPane().add(lblQoi);
 
 		initialFlowRate = new JTextField();
+		initialFlowRate.setHorizontalAlignment(SwingConstants.CENTER);
 		initialFlowRate.setBounds(277, 88, 96, 20);
 		frmDeclineCurves.getContentPane().add(initialFlowRate);
 		initialFlowRate.setColumns(10);
@@ -94,6 +97,7 @@ public class DeclineCurvesApp {
 		frmDeclineCurves.getContentPane().add(lblNewLabel);
 
 		qoLimit = new JTextField();
+		qoLimit.setHorizontalAlignment(SwingConstants.CENTER);
 		qoLimit.setBounds(277, 144, 96, 20);
 		frmDeclineCurves.getContentPane().add(qoLimit);
 		qoLimit.setColumns(10);
@@ -107,6 +111,7 @@ public class DeclineCurvesApp {
 		frmDeclineCurves.getContentPane().add(lblTimeWhenThe);
 
 		timeYears = new JTextField();
+		timeYears.setHorizontalAlignment(SwingConstants.CENTER);
 		timeYears.setEditable(false);
 		timeYears.setBounds(385, 254, 96, 20);
 		frmDeclineCurves.getContentPane().add(timeYears);
@@ -121,6 +126,7 @@ public class DeclineCurvesApp {
 		frmDeclineCurves.getContentPane().add(lblNpWhenThe);
 
 		accumulatedProduction = new JTextField();
+		accumulatedProduction.setHorizontalAlignment(SwingConstants.CENTER);
 		accumulatedProduction.setEditable(false);
 		accumulatedProduction.setColumns(10);
 		accumulatedProduction.setBounds(385, 294, 96, 20);
